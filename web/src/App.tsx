@@ -1,7 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import {Home} from './pages/Home'
+import { Home } from './pages/Home'
+import { New } from "./pages/New"
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/new">
-          Renderizando a New
+          <New />
         </Route>
       </Switch>
       </BrowserRouter>
